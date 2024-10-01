@@ -31,3 +31,13 @@ button:hover {
   border: 1px solid rgba(0,0,0,0.5);
   cursor: pointer;
 }
+
+#reset{
+  border-radius: 5px;
+  width: auto;
+  font-size: 16px;
+  height: auto;
+  background-color: darkgrey;
+  padding: 8px;
+  color:white;
+}

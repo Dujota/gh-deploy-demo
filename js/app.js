@@ -35,6 +35,12 @@ const compare = () => {
   }
 };
 
+function resetGame() {
+  playerChoice = '';
+  computerChoice = '';
+  msg = '';
+}
+
 function render() {
   resultDisplayEl.textContent = `You chose ${playerChoice} and the computer chose ${computerChoice}. ${msg}`;
 }
@@ -50,3 +56,4 @@ function play(event) {
 document.querySelector('#rock').addEventListener('click', play);
 document.querySelector('#paper').addEventListener('click', play);
 document.querySelector('#scissors').addEventListener('click', play);
+document.querySelector('#reset').addEventListener('click', resetGame);
